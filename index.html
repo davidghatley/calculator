@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <title>Calculator</title>
   <link rel="stylesheet" href="styles.css">
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
 </head>
 
 <body>
   <div class="container">
 
-    <div class="viewer">3.14</div>
+    <div class="viewer">0</div>
 
     <div class="simpleCalculator">
       <button class="number" name="0">0</button>
@@ -26,18 +27,19 @@
       <button class="number" name="decimal">.</button>
       <button class="function" name="plus">+</button>
       <button class="function" name="minus">-</button>
-      <button class="function" name="multiply">&#215</button>
-      <button class="function" name="divide">&#247</button>
-      <button class="function" name="equals">=</button><button class="function" name="leftParenthesis">(</button>
+      <button class="function" name="multiply">*</button>
+      <button class="function" name="divide">/</button>
+      <button class="equals" name="equals">=</button>
+      <button class="function" name="leftParenthesis">(</button>
       <button class="function" name="rightParenthesis">)</button>
-      <button class="function" name="percentage">%</button>
-      <button class="function" name="allClear">AC</button>
+      <!--<button class="function" name="percentage">%</button>-->
+      <button class="clear" name="allClear">AC</button>
     </div>
-
+<!--
     <div class="advancedFunctionality">
       <button class="function" name="radians">Rad</button>
       <button class="function" name="degrees">Deg</button>
-      <button class="function" name="factorial">x!</button>
+      <button class="function" name="factorial">x!</button>e
       <button class="function" name="inverse">Inv</button>
       <button class="function" name="sine">sin</button>
       <button class="function" name="naturalLogarithm">ln</button>
@@ -51,8 +53,9 @@
       <button class="function" name="exponential">EXP</button>
       <button class="function" name="power">x<sup>y</sup></button>
     </div>
-
+-->
   </div>
 </body>
+<script src="./script.js"></script>
 
 </html>

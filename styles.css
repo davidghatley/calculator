@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+  font-family: VT323;
+}
+
+button {
+  font-family: VT323;
+  font-size: 40px;
+  background: #dadce0;
+  color: #202124;
+  border: 2px solid;
+  box-sizing: border-box;
+  background: #dadce0;
+  padding:7px 10px;
+  margin: 5px;
+}
+
+.viewer {
+  grid-area: viewer;
+  background: white;
+  color: #202124;
+  border: 2px solid;
+  box-sizing: border-box;
+  text-align: right;
+  font-size: 50px;
+  margin: 5px;
+  padding: 30px;
+}
+
+.simpleCalculator {
+  grid-area: simple;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "leftParenthesis rightParenthesis percentage allClear"
+    "seven eight nine divide"
+    "four five six multiply"
+    "one two three minus"
+    "zero decimal equals plus"
+}
+
+.advancedFunctionality {
+  grid-area: advanced;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 2fr 5fr;
+  grid-template-columns: 3fr 4fr;
+  grid-template-areas:
+    "viewer viewer"
+    "advanced simple";
+}
+
+.number {
+  background: #f1f3f4;
+}
+
+[name = "0"] {
+  grid-area: zero;
+}
+[name = "1"] {
+  grid-area: one;
+}
+[name = "2"] {
+  grid-area: two;
+}
+[name = "3"] {
+  grid-area: three;
+}
+[name = "4"] {
+  grid-area: four;
+}
+[name = "5"] {
+  grid-area: five;
+}
+[name = "6"] {
+  grid-area: six;
+}
+[name = "7"] {
+  grid-area: seven;
+}
+[name = "8"] {
+  grid-area: eight;
+}
+[name = "9"] {
+  grid-area: nine;
+}
+[name = decimal] {
+  grid-area: decimal;
+}
+[name = divide] {
+  grid-area: divide;
+}
+[name = multiply] {
+  grid-area: multiply;
+}
+[name = minus] {
+  grid-area: minus;
+}
+[name = plus] {
+  grid-area: plus;
+}
+[name = equals] {
+  grid-area: equals;
+  background: rgb(53, 224, 127);
+  color: #fff;
+  border: 2px solid black;
+}
+[name = rightParenthesis] {
+  grid-area: rightParenthesis;
+}
+[name = leftParenthesis] {
+  grid-area: leftParenthesis;
+}
+[name = percentage] {
+  grid-area: percentage;
+}
+[name = allClear] {
+  grid-area: allClear;
+}
